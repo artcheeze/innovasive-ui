@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "es6",
+    "module": "commonJS",
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["node_modules", "public", "build"]
+}

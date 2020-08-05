@@ -10,17 +10,48 @@
 npm install --save innovasive-ui
 ```
 
+## Config
+
+1. Config tailwind.config.js
+
+```jsx
+module.exports = {
+  purge: [],
+  theme: {
+    extend: {
+      colors: {
+        'input-default': 'for all purpose of re-use component ',
+        'input-error': 'for all purpose of re-use component',
+        'input-focused': 'for all purpose of re-use component',
+        'input-disabled': 'for all purpose of re-use component'
+      }
+    }
+  },
+  variants: {},
+  plugins: []
+}
+```
+
+2. Config text at Design System CSS file
+
+```css
+.label-input {
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  font-style: normal;
+}
+```
+
 ## Usage
 
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'innovasive-ui'
-import 'innovasive-ui/dist/index.css'
+import { TextInput, TextInputFormik } from 'innovasive-ui'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <TextInput />
   }
 }
 ```
