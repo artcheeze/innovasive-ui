@@ -20,7 +20,7 @@ export function TextInput(props) {
       if (props.disabled) {
         return ' border-input-default bg-input-disabled cursor-not-allowed '
       } else {
-        return ' border-input-default bg-white focus:border-focused '
+        return ' border-input-default bg-white focus:border-input-focused '
       }
     }
   }
@@ -46,9 +46,10 @@ export function TextInput(props) {
       </div>
       <input
         name={props.name}
+        type={props.type}
         className={`border ${colorGenerator(
           props
-        )} transition-all duration-300 ease-in-out outline-none  `}
+        )} transition-all duration-300 ease-in-out outline-none label-input`}
         style={{
           width:
             props.overrides?.width || false ? props.overrides.width : '100%',

@@ -9,6 +9,7 @@ export function TextInputFormik(props) {
       {({ field, form, meta }) => (
         <TextInput
           name={props.name}
+          type={props.type}
           error={meta.error}
           label={props.label}
           placeholder={props.placeholder}
